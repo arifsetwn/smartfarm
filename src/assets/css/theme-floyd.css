@@ -215,6 +215,35 @@ p{
 	color: #ff4d76;
 }
 
+/*top menu */
+#topmenu-nav{
+	position:relative;
+	margin-top: 0px;
+}
+
+#topmenu-nav > nav{
+	background-color: transparent;
+	border: none;
+}
+
+#topmenu-nav > nav .navbar-brand{
+	color: #333;
+}
+
+#topmenu-nav > nav .navbar-nav > li > a{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#topmenu-nav > nav .navbar-nav li .fa-stack{
+	color: #FFF;
+}
+
+#topmenu-nav > nav .navbar-nav li .fa-stack .fa:first-child{
+	color: #ff4d76;
+}
+
+
 /*PANEL*/
 
 .panel{

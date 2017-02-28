@@ -11,7 +11,7 @@
               <button type="button" class="sidebar-toggle">
                 <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand text-size-24" href="#"><i class="fa fa-map"></i> Map </a>
+              <a class="navbar-brand text-size-24" href="#"><i class="fa fa-map"></i> {{ title }} </a>
             </div>
             <div class="collapse navbar-collapse" id="menu">
               <ul class="nav navbar-nav navbar-right">
@@ -51,34 +51,46 @@
 
       
       <div id="content">
-      <h1>{{ title }}</h1>
+      <div class="container-fluid">
+       <div class="row">
+            <div class="col-xs-12">
+              <div class="panel">
+                <div class="panel-body">
+                   <h1>{{ title }}</h1>
 
-       
-    <sebm-google-map 
-      [latitude]="lat"
-      [longitude]="lng"
-      [zoom]="zoom"
-      [disableDefaultUI]="false"
-      [zoomControl]="false"
-      (mapClick)="mapClicked($event)">
-    
-      <sebm-google-map-marker 
-          *ngFor="let m of markers; let i = index"
-          (markerClick)="clickedMarker(m.label, i)"
-          [latitude]="m.lat"
-          [longitude]="m.lng"
-          [label]="m.label"
-          [markerDraggable]="m.draggable"
-          (dragEnd)="markerDragEnd(m, $event)"
-      >
-          
-        <sebm-google-map-info-window>
-          <strong>{{ m.label }}</strong>
-        </sebm-google-map-info-window>
-        
-      </sebm-google-map-marker>
-             </sebm-google-map>
-              
+                             
+                       <sebm-google-map 
+                            [latitude]="lat"
+                            [longitude]="lng"
+                            [zoom]="zoom"
+                            [disableDefaultUI]="false"
+                            [zoomControl]="false"
+                            (mapClick)="mapClicked($event)">
+                          
+                            <sebm-google-map-marker 
+                                *ngFor="let m of markers; let i = index"
+                                (markerClick)="clickedMarker(m.label, i)"
+                                [latitude]="m.lat"
+                                [longitude]="m.lng"
+                                [label]="m.label"
+                                [markerDraggable]="m.draggable"
+                                (dragEnd)="markerDragEnd(m, $event)"
+                            >
+                                
+                              <sebm-google-map-info-window>
+                                <strong>{{ m.label }}</strong>
+                              </sebm-google-map-info-window>
+                              
+                            </sebm-google-map-marker>
+                          </sebm-google-map>
+
+     
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reprehenderit fugiat quisquam. Ipsa culpa temporibus, magni fugiat architecto a cupiditate, ducimus perferendis obcaecati magnam id. Maxime eligendi omnis possimus iusto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
       </div>
-    
+    </div>
  

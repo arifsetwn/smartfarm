@@ -6,4 +6,6 @@ selector :'sensor-page',
 templateUrl :'sensor.component.html'
 })
 
-export class SensorComponent{}
+export class SensorComponent{
+  title:string = "Data"
+}

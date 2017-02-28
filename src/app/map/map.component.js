@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var MapComponent = (function () {
     function MapComponent() {
+        this.title = "Map";
         this.zoom = 15;
         // initial center position for the map
         this.lat = -7.771387;

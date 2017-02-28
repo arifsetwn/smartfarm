@@ -18,7 +18,7 @@ interface marker {
 })
 
 export class MapComponent{
-
+  title:string = "Map";
   zoom: number = 15;
   
     // initial center position for the map

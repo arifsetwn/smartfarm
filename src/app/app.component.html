@@ -1,17 +1,24 @@
 <div id="wrapper">
+
     <!-- sidebar kiri --> 
     <div id="sidebar">
       <div id="sidebar-wrapper">
+       
+
         <div class="sidebar-title">
               <span class="text-size-40 text-loose">Smart Farm</span><br>
               <span class="text-size-18 text-grey">Smart Farm Dashboard</span>
-        </div>
+              
+           </div>    
+
            <ul class="sidebar-nav">
           <li class="sidebar-close"><a href="#"><i class="fa fa-fw fa-close"></i></a></li>
-          <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ><a routerLink="/" ><i class="fa fa-fw fa-star"></i><span>Dashboard</span></a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ><a routerLink="/" ><i class="fa fa-fw fa-dashboard"></i><span>Dashboard</span></a></li>
+          <li routerLinkActive="active"><a routerLink = "/map"><i class="fa fa-fw fa-map"></i><span>Map</span></a></li>
+
           <li>
             <a href="#nav-dropdown1" data-toggle="collapse" aria-controls="nav-dropdown1">
-              <i class="fa fa-fw fa-cog"></i><span>Sensor</span>
+              <i class="fa fa-fw fa-database"></i><span>Data</span>
               <span class="sidebar-nav-arrow"><i class="fa fa-angle-down"></i></span>
             </a>
             <ul class="sidebar-nav-child collapse collapseable" id="nav-dropdown1">
@@ -29,7 +36,7 @@
             </ul>
           </li>
       
-          <li routerLinkActive="active"><a routerLink = "/map"><i class="fa fa-fw fa-map"></i><span>Map</span></a></li>
+          
           
         </ul>
         <div class="sidebar-footer">
